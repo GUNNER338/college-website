@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo {
+        background-color: purple;
+        height: 150px;
+        width: 1536px;
+    }
+
+    .clglogo {
+        height: 150px;
+        width: 150px;
+    }
+
+    .header {
+        margin: auto;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        /* width: 20%; */
+        position: relative;
+        bottom: 154px;
+        left: 186px;
+        font-size: 83px;
+        color: yellow;
+    }
+
+    .sub {
+        font-size: 30px;
+        position: relative;
+        left: 196px;
+        bottom: 154px;
+        color: aqua;
+    }
+
+    .phone {
+        font-size: 15px;
+        position: relative;
+        left: 1410px;
+        bottom: 275px;
+        color: aliceblue
+    }
+
+    .Email {
+        font-size: 15px;
+        position: relative;
+        left: 1353px;
+        bottom: 275px;
+        color: white;
+    }
+
+    .subheader {
+        display: inline-block;
+        background-color: black;
+        height: 33px;
+        width: 1536px;
+        color: wheat;
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .navbar1 {
+        background-color: grey;
+        width: 1536px;
+    }
+
+    .navbar1 li {
+        float: left;
+        list-style: none;
+        padding: 3px 25px;
+        text-decoration: none;
+        color: black;
+        margin: 3px 3px;
+        font-size: 25px;
+    }
+
+    .navbar1 li:hover {
+        background-color: rgb(110, 81, 81);
+    }
+
+    .navbar1 ul {
+        overflow: auto;
+    }
+
+    .search {
+        float: right;
+        color: antiquewhite;
+        padding: 7px 60px;
+        font-size: 20px;
+    }
+
+    .navbar1 input {
+        border: 1px solid black;
+        border-radius: 12px;
+        padding: 5px 8px;
+    }
+    .container{
+        max-width: 960px;
+        margin-inline: auto;
+        padding: 100px 15px;
+    }
+    .title{
+        margin-bottom: 50px;
+    }
+    .title span{
+        display: block;
+    }
+    .title .primary{
+        font-size: 50px;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: red;
+        border-radius: 50%;
+    }
+    .title .primary{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 50px;
+        font-weight: 400; 
+        color: white;
+    }
+    .gallery-wrapper{
+        display: flex;
+    }
+    .gallery-item{
+        position: relative;
+        isolation: isolate;
+        display: flex;
+        flex: 1;
+        height: 500px;
+        background-color: #000;
+        padding: 25px;
+        opacity: 1;
+        overflow: hidden;
+        transition: flex 0.5s, opacity 0.25s;
+    }
+    .gallery-item:hover{
+        opacity: 1;
+        flex: 5;
+    }
+    .gallery-item:not(:hover){
+        opacity: 0.75;
+    }
+    .item-image{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .item-description{
+        align-self: flex-end;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .name{
+        font-size: 37px;
+        background: linear-gradient(90deg,#f32d5b ,#ff009b);
+        padding: translateY(-10px);
+    }
+    .role{
+        display: inline-block;
+        background: linear-gradient(90deg, #4136d9, #0086c7);
+        padding: 10px;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+        transform: translateY(10px);
+    }
+    .name,.role{
+        opacity: 0;
+        transition: opacity 0.25s, transform 0.3s;
+        transition-delay: .35s;
+    }
+    .gallery-item:hover.name, .gallery-item:hover .role{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .gallery-item:not(:hover) .name, .gallery-item:not(:hover) .role{
+        transition-delay: 0s;
+    }
+    .homelink{
+        color: yellow;
+    }
+    @media screen and (max-width:768px){
+        .gallery-wrapper{
+            flex-direction: column;
+            height: 100vh;
+        }
+        .gallery-item:hover{
+            flex-basis: 100%
+        }
+    }
+</style>
+<body>
+    <div>
+        <body bgcolor="lavender">
+            <header class="main">
+                <nav>
+                    <div class="logo">
+                        <img src="GNDU.png" alt="" class="clglogo">
+                        <ul class="header"><u><a href="main.html" class="homelink">GNDU COLLEGE</a></u></ul>
+                        <ul class="sub">Ladowali Road, Jalandhar</ul>
+                        <ul class="phone">📞0181-2227801</ul>
+                        <a href="">
+                            <ul class="Email">&#x1f4e7; gsranu338@gmail.com</ul>
+                        </a>
+                    </div>
+                </nav>
+                <nav>
+                    <font class="subheader">Accredited with CGPC of 3.85 on four point scale at "A++" grade (highest
+                        level) by
+                        NAAC and Conferred "University with Potential for Excellence" status by UGC.</font>
+                </nav>
+                <nav class="navbar1">
+                    <ul>
+                        <a href="about.html">
+                            <li>About</li>
+                        </a>
+                        <a href="admission.html">
+                            <li>Admission</li>
+                        </a>
+                        <a href="acadmic.html">
+                            <li>Acadmics</li>
+                        </a>
+                        <a href="facility.html">
+                            <li>Facilites</li>
+                        </a>
+                        <a href="result.html">
+                            <li>Result</li>
+                        </a>
+                        <a href="gallery.html">
+                            <li>Photo Gallery</li>
+                        </a>
+                        <a href="">
+                            <li>Soical Media</li>
+                        </a>
+                        <div class="search">
+                            <input type="text" name="search" id="search" placeholder="search">
+                            <input type="button" value="" placeholder="&#xF52A;">
+                        </div>
+                    </ul>
+                </nav>
+            </header>
+    </div>
+    <main>
+        <section class="container">
+            <h2 class="title">
+                <span class="primary"><b>Facility</b></span>
+            </h2>
+            <div class="gallery-wrapper">
+				<figure class="gallery-item">
+					<img src="Screenshot_2022-05-03-10-44-41-109_com.snapchat.android.jpg" alt="" class="item-image" />
+					<figcaption class="item-description">
+						<h2 class="name">Classes</h2>
+						<span class="role">Neat and Big Classes</span>
+					</figcaption>
+				</figure>
+				<figure class="gallery-item">
+					<img src="1.jpg" alt="" class="item-image" />
+					<figcaption class="item-description">
+						<h2 class="name">Parking</h2>
+						<span class="role">Well Managed Free Parking</span>
+					</figcaption>
+				</figure>
+				<figure class="gallery-item">
+					<img src="2.jpg" alt="" class="item-image" />
+					<figcaption class="item-description">
+						<h2 class="name">Badminton Court</h2>
+						<span class="role">Well design Court</span>
+					</figcaption>
+				</figure>
+				<figure class="gallery-item">
+					<img src="3.jpg" alt="" class="item-image" />
+					<figcaption class="item-description">
+						<h2 class="name">John Doe</h2>
+						<span class="role">Computer Labs</span>
+					</figcaption>
+				</figure>
+				</div>
+		</section>
+        </section>
+    </main>
+</body>
+
+</html>
